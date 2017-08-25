@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "standard"
+    "test": "standard && jasmine"
   },
   "author": "",
   "license": "ISC",
@@ -12,9 +12,12 @@
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "eslint": "^3.19.0",
+    "jasmine": "^2.8.0",
+    "jasmine-console-reporter": "^2.0.1",
     "standard": "^10.0.2"
   },
   "standard": {
-    "parser": "babel-eslint"
+    "parser": "babel-eslint",
+    "env": "jasmine"
   }
 }

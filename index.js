@@ -28,7 +28,7 @@ const Squarewave = (size, f, fs, amplitude = 1, useCounter = true) => {
   let lut = []
   const T = fs / f
   for (let i = 0; i < size; i++) {
-    lut.push((i % T) > (T / 2) ? -amplitude : amplitude)
+    lut.push((i % T) < (T / 2) ? amplitude : -amplitude)
   }
   return makeReturn(lut, useCounter)
 }
